@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: url('../img/hojas.jpg');
+    background-attachment: fixed;
+    #global{
+        margin: 0px auto;
+        margin-top: 30px;
+        //padding: 20px;
+        width: 65%;
+        box-shadow: 0px 0px 4px #ccc;
+        #contenido_principal{
+            background-color: white ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+    
+            #header, #slider, #content{
+                flex-basis: 100%;
+                flex-grow: 1;
+                width: 100%;
+                padding: 1% 2%;
+            }
+            
+            #header{
+                display: flex;
+                justify-content: right;
+                flex-wrap: wrap;
+                align-items: center;
+                #titulo_header{
+                    margin-top: 0.5%;
+                    margin-bottom: 0.5%;
+                    h1{
+                        font-size: 30px;
+                        background-color: #20603B;
+                        letter-spacing: 4px;
+                        font-weight: 600;
+                        color: white;
+                        font-family:Verdana, Arial, Helvetica, sans-serif;
+                        text-transform: uppercase;
+                        padding: 9px 5px;
+                    }
+                }
+                #navbar{
+                    margin-top: 0.5%;
+                    margin-bottom: 0.5%;
+                    flex-basis: 100%;
+                    background-color: #333;
+                    #menu{
+                        list-style: none;
+                        display: flex;
+                        flex-wrap: wrap;
+                        li{
+                            //background-color: black;
+                            a{
+                                text-transform: uppercase;
+                                padding: 10px;
+                                font-family:Arial, Helvetica, sans-serif;
+                                text-decoration: none;
+                                color: white;
+                                display: block;
+                                cursor: pointer;
+                                width: 100%;
+                                transition: all 300ms;
+                            }
+                            transition: all 300ms;
+                        }
+                        li:hover{
+                            transform: scale(1.1);
+                            border-radius: 5px;
+                            box-shadow: 0px 0px 3px white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
