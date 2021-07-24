@@ -12,6 +12,15 @@
 .azul{
     background-color: blue !important;
 }
+.li_verde:hover{
+    background-color: #20603B !important;
+}
+.li_azul:hover{
+    background-color: blue !important;
+}
+.li_rojo:hover{
+    background-color: red !important;
+}
 body{
     background-image: url('../img/hojas.jpg');
     background-attachment: fixed;
@@ -85,8 +94,24 @@ body{
                             box-shadow: 0px 0px 3px white;
                             background-color: #20603B;
                         }
+                       
+                        
                     }
                 }
+            }
+
+            #slider{
+                
+.bx-wrapper{
+    max-width: 100% !important;
+    .bx-viewport{
+        .bxslider > *{
+            width: 100% !important;
+            height: 250px !important;
+        }
+
+    }
+}
             }
             
             #content{
@@ -202,6 +227,11 @@ body{
         font-family: Arial, Helvetica, sans-serif;
         font-size:25px;
         text-align: center;
+        background-color: rgba(105, 105, 105, 0.5);
+        width: 65%;
+        margin: 0px auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
         a{
             text-decoration: none;
             color: blanchedalmond;
@@ -214,9 +244,8 @@ body{
         flex-direction: column;
         height: 150px;
         width: 75px;
-        background-color: gray;
+        background-color: rgba(105, 105, 105, 0.5);
         top: 50%;
-        opacity: 0.5;
         align-items: center;
         justify-content: center;
         .seleccion_color{

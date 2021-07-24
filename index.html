@@ -6,7 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../proyecto1/css/styles.css">
+
     <script src="../proyecto1/js/jquery-3.6.0.min.js"></script>
+    <!-- slider -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- fin slider -->
+    <!-- Moment js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es-mx.min.js" integrity="sha512-Qy4cmZ6v7vnVEc0cn/BIj9q15eB98do4hMvu8xtc/H+v+YYpdpDrB35flHS3NPLbZUpe1npSYY/u+Gi3UB61vw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="../proyecto1/js/main.js"></script>
     <title>Caracol</title>
 </head>
@@ -22,26 +30,33 @@
             <!-- Inicio cabecera -->
             <header id="header">
                 <div id="titulo_header">
-                <h1 id="titulo">Practicando js</h1>
+                    <h1 id="titulo">Practicando js</h1>
                 </div>
 
                 <nav id="navbar">
                     <ul id="menu">
-                        <li><a href="#">Inicio</a></li>
-                        <li><a href="#">Calculadora</a></li>
-                        <li><a href="#">Reloj</a></li>
-                        <li><a href="#">Juego chapuza</a></li>
-                        <li><a href="#">Contacto</a></li>
+                        <li class="lis"><a href="#">Inicio</a></li>
+                        <li class="lis"><a href="#">Calculadora</a></li>
+                        <li class="lis"><a href="#">Reloj</a></li>
+                        <li class="lis"><a href="#">Juego chapuza</a></li>
+                        <li class="lis"><a href="#">Contacto</a></li>
                     </ul>
                 </nav>
             </header>
             <!-- Inicio Principal -->
-            <div id="slider"></div>
+            <div id="slider">
+                <div class="bxslider">
+                    <div><img src="../proyecto1/img/hojas.jpg"></div>
+                    <div><img src="../proyecto1/img/rojo.jpg"></div>
+                    <div><img src="../proyecto1/img/cielo.jpg"></div>
+
+                </div>
+            </div>
             <!-- Inicio contenido -->
             <section id="content">
                 <!-- Post/articulos -->
                 <div id="posts">
-                    <article class="post">
+                    <!-- <article class="post">
                         <h2>Titulo muyyyyyyyyyy laaargo</h2>
                         <span>Fecha de publicacion</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin imperdiet interdum purus sed
@@ -54,9 +69,9 @@
                             platea dictumst. Curabitur nec erat convallis, facilisis velit ultricies, efficitur enim.
                             Sed
                             vel consectetur ligula.</p>
-                            <a href="#" class="leer_más">
-                                Leer más
-                            </a>
+                        <a href="#" class="leer_más">
+                            Leer más
+                        </a>
                     </article>
                     <article class="post">
                         <h2>Titulo corto</h2>
@@ -71,10 +86,10 @@
                             platea dictumst. Curabitur nec erat convallis, facilisis velit ultricies, efficitur enim.
                             Sed
                             vel consectetur ligula.</p>
-                            <a href="#"class="leer_más">
-                                Leer más
-                            </a>
-                        </article>
+                        <a href="#" class="leer_más">
+                            Leer más
+                        </a>
+                    </article>
                     <article class="post">
                         <h2>Titulo Medianooooo</h2>
                         <span>Fecha de publicacion</span>
@@ -88,16 +103,20 @@
                             platea dictumst. Curabitur nec erat convallis, facilisis velit ultricies, efficitur enim.
                             Sed
                             vel consectetur ligula.</p>
-                            <a href="#" class="leer_más">
-                                Leer más
-                            </a>
-                    </article>
+                        <a href="#" class="leer_más">
+                            Leer más
+                        </a>
+                    </article> -->
                 </div>
                 <!-- Barra lateral-->
                 <aside id="sidebar">
                     <h3>¿Quién soy?</h3>
                     <img src="../proyecto1/img/caracol.jpg" alt="">
-                    <p>El término caracol es el nombre común de los moluscos gasterópodos provistos de una concha espiral. Hay caracoles marinos (a veces denominados caracolas), dulceacuícolas y terrestres. Los caracoles se mueven por medio de una serie de contracciones musculares ondulatorias que recorren la cara inferior del pie. Estos poseen en la boca una estructura llamada rádula, con miles de dentículos que les sirven para raspar el moho de las rocas.
+                    <p>El término caracol es el nombre común de los moluscos gasterópodos provistos de una concha
+                        espiral. Hay caracoles marinos (a veces denominados caracolas), dulceacuícolas y terrestres. Los
+                        caracoles se mueven por medio de una serie de contracciones musculares ondulatorias que recorren
+                        la cara inferior del pie. Estos poseen en la boca una estructura llamada rádula, con miles de
+                        dentículos que les sirven para raspar el moho de las rocas.
 
                     </p>
                     <div id="login_sidebar">
@@ -117,7 +136,8 @@
         </div>
     </div>
     <!-- inicio pie -->
-    <footer class="pie">Desarrollado por <a href="https://arbolb.click" target="_blank">Víctor Anizar Morales</a> &copy;</footer>
+    <footer class="pie">Desarrollado por <a href="https://arbolb.click" target="_blank">Víctor Anizar Morales</a> &copy;
+    </footer>
 </body>
 
 </html>
