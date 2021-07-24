@@ -8,16 +8,21 @@
     <link rel="stylesheet" href="../proyecto1/css/styles.css">
     <script src="../proyecto1/js/jquery-3.6.0.min.js"></script>
     <script src="../proyecto1/js/main.js"></script>
-    <title>Document</title>
+    <title>Caracol</title>
 </head>
 
 <body>
+    <div id="cambio_tema">
+        <div id="color_verde" class="seleccion_color verde"></div>
+        <div id="color_rojo" class="seleccion_color rojo"></div>
+        <div id="color_azul" class="seleccion_color azul"></div>
+    </div>
     <div id="global">
         <div id="contenido_principal">
             <!-- Inicio cabecera -->
             <header id="header">
                 <div id="titulo_header">
-                    <h1>Practicando js</h1>
+                <h1 id="titulo">Practicando js</h1>
                 </div>
 
                 <nav id="navbar">
@@ -37,7 +42,7 @@
                 <!-- Post/articulos -->
                 <div id="posts">
                     <article class="post">
-                        <h2>Titulo del articulo</h2>
+                        <h2>Titulo muyyyyyyyyyy laaargo</h2>
                         <span>Fecha de publicacion</span>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin imperdiet interdum purus sed
                             feugiat. Aliquam consectetur accumsan iaculis. Integer bibendum urna eget nunc semper
@@ -49,16 +54,70 @@
                             platea dictumst. Curabitur nec erat convallis, facilisis velit ultricies, efficitur enim.
                             Sed
                             vel consectetur ligula.</p>
+                            <a href="#" class="leer_más">
+                                Leer más
+                            </a>
+                    </article>
+                    <article class="post">
+                        <h2>Titulo corto</h2>
+                        <span>Fecha de publicacion</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin imperdiet interdum purus sed
+                            feugiat. Aliquam consectetur accumsan iaculis. Integer bibendum urna eget nunc semper
+                            pharetra.
+                            Pellentesque malesuada luctus neque ac fermentum. In hac habitasse platea dictumst. Mauris
+                            dolor
+                            magna, tristique eget nisl non, hendrerit interdum tellus. In et nulla ac tellus placerat
+                            aliquam a sed quam. Sed semper diam ex, ac egestas leo volutpat sagittis. In hac habitasse
+                            platea dictumst. Curabitur nec erat convallis, facilisis velit ultricies, efficitur enim.
+                            Sed
+                            vel consectetur ligula.</p>
+                            <a href="#"class="leer_más">
+                                Leer más
+                            </a>
+                        </article>
+                    <article class="post">
+                        <h2>Titulo Medianooooo</h2>
+                        <span>Fecha de publicacion</span>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin imperdiet interdum purus sed
+                            feugiat. Aliquam consectetur accumsan iaculis. Integer bibendum urna eget nunc semper
+                            pharetra.
+                            Pellentesque malesuada luctus neque ac fermentum. In hac habitasse platea dictumst. Mauris
+                            dolor
+                            magna, tristique eget nisl non, hendrerit interdum tellus. In et nulla ac tellus placerat
+                            aliquam a sed quam. Sed semper diam ex, ac egestas leo volutpat sagittis. In hac habitasse
+                            platea dictumst. Curabitur nec erat convallis, facilisis velit ultricies, efficitur enim.
+                            Sed
+                            vel consectetur ligula.</p>
+                            <a href="#" class="leer_más">
+                                Leer más
+                            </a>
                     </article>
                 </div>
                 <!-- Barra lateral-->
                 <aside id="sidebar">
+                    <h3>¿Quién soy?</h3>
+                    <img src="../proyecto1/img/caracol.jpg" alt="">
+                    <p>El término caracol es el nombre común de los moluscos gasterópodos provistos de una concha espiral. Hay caracoles marinos (a veces denominados caracolas), dulceacuícolas y terrestres. Los caracoles se mueven por medio de una serie de contracciones musculares ondulatorias que recorren la cara inferior del pie. Estos poseen en la boca una estructura llamada rádula, con miles de dentículos que les sirven para raspar el moho de las rocas.
+
+                    </p>
+                    <div id="login_sidebar">
+                        <h3>Iniciar sesión</h3>
+                        <form action="#">
+                            <label for="name">Nombre:</label>
+                            <input type="text" name="name" id="name">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email">
+                            <label for="pass">Contraseña</label>
+                            <input type="password" name="password" id="password">
+                            <button type="submit" id="boton_login">Enviar</button>
+                        </form>
+                    </div>
                 </aside>
             </section>
         </div>
     </div>
     <!-- inicio pie -->
-    <footer class="pie">Desarrollado por Víctor Anizar Morales</footer>
+    <footer class="pie">Desarrollado por <a href="https://arbolb.click" target="_blank">Víctor Anizar Morales</a> &copy;</footer>
 </body>
 
 </html>

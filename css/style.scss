@@ -1,10 +1,21 @@
 *{
     padding: 0;
     margin: 0;
+    transition: all 300ms;
+}
+.verde{
+    background-color: #20603B !important;
+}
+.rojo{
+    background-color: red !important;
+}
+.azul{
+    background-color: blue !important;
 }
 body{
     background-image: url('../img/hojas.jpg');
     background-attachment: fixed;
+    
     #global{
         margin: 0px auto;
         margin-top: 30px;
@@ -72,11 +83,163 @@ body{
                             transform: scale(1.1);
                             border-radius: 5px;
                             box-shadow: 0px 0px 3px white;
+                            background-color: #20603B;
+                        }
+                    }
+                }
+            }
+            
+            #content{
+                display: flex;
+                flex-wrap: wrap;
+                //justify-content: space-between;
+                font-family: Helvetica,Verdana, Geneva, Tahoma, sans-serif;
+                #posts{
+                    margin-right: 1%;
+                    flex-basis: 66%;
+                    .post{
+                        display: flex;
+                        flex-wrap: wrap;
+                        margin-bottom: 15px;
+                        h2{
+                            
+                            color: #333;
+                            font-size: 30px;
+                            text-align: left;
+                            flex-basis: 100%;
+                            flex-grow: 1;
+                            width: 100%;
+                        }
+                        span{
+                            flex-basis: 100%;
+                            margin-top: 5px;
+                            flex-grow: 1;
+                            width: 100%;
+                            color: #ccc;
+                        }
+                        p{
+                            flex-basis: 100%;
+                            margin-top: 5px;
+                            
+                            flex-grow: 1;
+                            width: 100%;
+                            text-align: justify;
+                        }
+                        .leer_más{
+                            margin-top: 5px;
+                            background-color: #20603B;
+                            color: white;
+                            padding: 10px 5px;
+                            border: none;
+                            text-decoration: none;
+                            transition: all 300ms;
+                        }
+                        .leer_más:hover{
+                            transform: scale(1.1);
+                            box-shadow: 0px 0px 5px #333;
+                        }
+                    }
+                }
+                #sidebar{
+                    margin-left: 5.5%;
+                    padding-bottom: 20px;
+                    flex-basis: 27%;
+                    h3{
+                        background-image: url("../img/lines.png");
+                        text-align: center;
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
+                    img{
+                        width: 100%;
+                        border-radius: 5px;
+                    }
+                    p{
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                        text-align: justify;
+                    }
+                    #login_sidebar{
+                        margin-top: 10px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        h3{
+                            flex-basis: 100%;
+                        }
+                        form{
+                            display: grid;
+                            grid-template-rows: repeat(4, 1fr);
+                            width: 100%;
+                            input, label{
+                                width: 94%;
+                                margin-top: 5px;
+                                padding: 5px;
+                            }
+                            button{
+
+                                width: 50%;
+                                margin: 5px auto;
+                                margin-top: 5px;
+                                background-color: #20603B;
+                            color: white;
+                            padding: 10px 5px;
+                            border: none;
+                            text-decoration: none;
+                            transition: all 300ms;
+                            }
+                            button:hover{
+                                transform: scale(1.1);
+                            box-shadow: 0px 0px 5px #333;
+                            }
                         }
                     }
                 }
             }
         }
+    }
+    .pie{
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size:25px;
+        text-align: center;
+        a{
+            text-decoration: none;
+            color: blanchedalmond;
+            text-shadow: 0px 0px 3px black;
+        }
+    }
+    #cambio_tema{
+        display: flex;
+        position: fixed;
+        flex-direction: column;
+        height: 150px;
+        width: 75px;
+        background-color: gray;
+        top: 50%;
+        opacity: 0.5;
+        align-items: center;
+        justify-content: center;
+        .seleccion_color{
+            width: 70%;
+            height: 30%;
+            margin: 5px;
+            opacity: 1 !important;
+            background-image: url("../img/arrow-der.png");
+            transition: all 300ms;
+        }
+        #color_verde{
+            background-color: green;
+        }
+        #color_rojo{
+            background-color: red;
+        }
+        #color_azul{
+            background-color: blue;
+        }
+        .seleccion_color:hover{
+            border: 2px solid white;
+        }
+
     }
 }
 
