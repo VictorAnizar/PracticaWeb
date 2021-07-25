@@ -21,6 +21,9 @@
 .li_rojo:hover{
     background-color: red !important;
 }
+.oculto{
+    display: none !important;
+}
 body{
     background-image: url('../img/hojas.jpg');
     background-attachment: fixed;
@@ -101,17 +104,16 @@ body{
             }
 
             #slider{
-                
-.bx-wrapper{
-    max-width: 100% !important;
-    .bx-viewport{
-        .bxslider > *{
-            width: 100% !important;
-            height: 250px !important;
-        }
+                .bx-wrapper{
+                    max-width: 100% !important;
+                    .bx-viewport{
+                        .bxslider > *{
+                            width: 100% !important;
+                            height: 250px !important;
+                        }
 
-    }
-}
+                    }
+                }
             }
             
             #content{
@@ -218,6 +220,36 @@ body{
                             }
                         }
                     }
+                    #sesion_iniciada{
+                        margin-top: 10px;
+                        display: flex;
+                        flex-wrap: wrap;
+                        h3{
+                            flex-basis: 100%;
+                        }
+                        form{
+                            display: flex;
+                            width: 100%;
+                            justify-content: center;
+                            align-items: center;
+                            button{
+
+                                width: 50%;
+                                margin: 5px auto;
+                                margin-top: 5px;
+                                background-color: #20603B;
+                            color: white;
+                            padding: 10px 5px;
+                            border: none;
+                            text-decoration: none;
+                            transition: all 300ms;
+                            }
+                            button:hover{
+                                transform: scale(1.1);
+                            box-shadow: 0px 0px 5px #333;
+                            }
+                        }                      
+                    }
                 }
             }
         }
@@ -269,6 +301,28 @@ body{
             border: 2px solid white;
         }
 
+    }
+    #goback{
+        position: fixed;
+        width: 50px;
+        height: 50px;
+        background-color: rgba(105, 105, 105, 0.5);
+        top: 90%;
+        left: 97%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 0px 3px white;
+        a{
+            text-align: center;
+            color: azure;
+            font-size: 50px;
+            font-weight: 900;
+            display: block;
+            width: 100%;
+            text-decoration: none;
+            
+        }
     }
 }
 

@@ -25,12 +25,17 @@
         <div id="color_rojo" class="seleccion_color rojo"></div>
         <div id="color_azul" class="seleccion_color azul"></div>
     </div>
+    <div id="goback">
+        <a href="#" title="regresar al inicio">^</a>
+        
+    </div>
+
     <div id="global">
         <div id="contenido_principal">
             <!-- Inicio cabecera -->
             <header id="header">
                 <div id="titulo_header">
-                    <h1 id="titulo">Practicando js</h1>
+                    <h1 id="titulo">Arbol</h1>
                 </div>
 
                 <nav id="navbar">
@@ -119,16 +124,22 @@
                         dentículos que les sirven para raspar el moho de las rocas.
 
                     </p>
-                    <div id="login_sidebar">
+                    <div id="login_sidebar" class="">
                         <h3>Iniciar sesión</h3>
-                        <form action="#">
+                        <form action="#" id="login">
                             <label for="name">Nombre:</label>
                             <input type="text" name="name" id="name">
                             <label for="email">Email:</label>
                             <input type="email" name="email" id="email">
                             <label for="pass">Contraseña</label>
-                            <input type="password" name="password" id="password">
-                            <button type="submit" id="boton_login">Enviar</button>
+                            <input type="text" name="password" id="password">
+                            <button type="submit" id="boton_login" >Enviar</button>
+                        </form>   
+                    </div>
+                    <div id="sesion_iniciada" class="oculto">
+                       
+                        <form action="#">
+                            <button type="submit" id="buton_logout">Cerrar sesión</button>
                         </form>
                     </div>
                 </aside>

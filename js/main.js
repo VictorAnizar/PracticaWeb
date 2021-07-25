@@ -1,6 +1,8 @@
 'use strict'
 $(document).ready(function () {
 
+
+
     //slider
     $('.bxslider').bxSlider({
         mode: 'fade',
@@ -67,7 +69,7 @@ $(document).ready(function () {
         // post.appendChild(a);
         // posts_html.appendChild(post);
         //opcion 2
-        var plantilla=`
+        var plantilla = `
         <article class="post">
             <h2>${i.title}</h2>
             <span>${i.date}</span>
@@ -137,6 +139,63 @@ $(document).ready(function () {
         $(".lis").removeClass("li_rojo li_verde");
         $(".lis").addClass("li_azul");
     });
+    //boton regresar al inicio
+    $("#goback").click(function () {
+        $('html, body').animate({
+            scrollTop: 0
+        }, 500);
+    });
+    //guardar en localstorage
+    if (typeof Storage != 'undefined') {
+        console.log("Localstorage disponible");
+    } else {
+        console.log("localstorage incompatible");
+    }
+
+    $("#boton_login").click(function () {
+        //si los campos son llenados
+        if(($("#name").val()!='')&&($("#email").val()!='')&&($("#password").val()!='')){
+            var usuario = {
+                name: $("#name").val(),
+                email: $("#email").val(),
+                password: $("#password").val()
+            };
+            localStorage.setItem("usuario", JSON.stringify(usuario));
+        }else{
+            alert("Llena los datos correctamente");
+        }
+    });
+
+    var userjs = JSON.parse(localStorage.getItem("usuario"));
+    if (userjs == null) {//si es null es que no hay usuarios en local
+        console.log("no hay usuarios en local");
+        $("#login_sidebar").removeClass("oculto");//va a estar visible el form
+        $("#sesion_iniciada").addClass("oculto");//va a estar invisible el saludo al usuario
+    } else {//de lo contrario, es que sí hay un usuario
+        console.log(userjs);
+        $("#login_sidebar").addClass("oculto");//va a estar visible el form
+        $("#sesion_iniciada").removeClass("oculto");//va a estar invisible el saludo al usuario
+
+        //como sí hay un usuario se va a mostar el nombre de éste en el h3
+
+        // var plantilla_saludo=`
+        // <h3>Hola ${JSON.parse(localStorage.getItem("usuario")).name}</h3>
+        // `;
+        var plantilla_saludo=JSON.parse(localStorage.getItem("usuario")).name;
+        var h3=document.createElement("h3");
+        h3.append("Hola "+plantilla_saludo)
+        document.querySelector("#sesion_iniciada").prepend(h3);
+
+
+        //al presionar el boton de cerrar sesion se borra el usuario en el local storage
+        $("#buton_logout").click(function () {
+            localStorage.removeItem("usuario");
+            $("#login_sidebar").removeClass("oculto");//va a estar visible el form
+            $("#sesion_iniciada").addClass("oculto");//va a estar invisible el saludo al usuario
+        });
+    }
+
 
 
 });
+

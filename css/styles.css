@@ -29,6 +29,10 @@
   background-color: red !important;
 }
 
+.oculto {
+  display: none !important;
+}
+
 body {
   background-image: url("../img/hojas.jpg");
   background-attachment: fixed;
@@ -212,6 +216,35 @@ body #global #contenido_principal #content #sidebar #login_sidebar form button:h
   transform: scale(1.1);
   box-shadow: 0px 0px 5px #333;
 }
+body #global #contenido_principal #content #sidebar #sesion_iniciada {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+body #global #contenido_principal #content #sidebar #sesion_iniciada h3 {
+  flex-basis: 100%;
+}
+body #global #contenido_principal #content #sidebar #sesion_iniciada form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+body #global #contenido_principal #content #sidebar #sesion_iniciada form button {
+  width: 50%;
+  margin: 5px auto;
+  margin-top: 5px;
+  background-color: #20603B;
+  color: white;
+  padding: 10px 5px;
+  border: none;
+  text-decoration: none;
+  transition: all 300ms;
+}
+body #global #contenido_principal #content #sidebar #sesion_iniciada form button:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 5px #333;
+}
 body .pie {
   color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -258,6 +291,27 @@ body #cambio_tema #color_azul {
 }
 body #cambio_tema .seleccion_color:hover {
   border: 2px solid white;
+}
+body #goback {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(105, 105, 105, 0.5);
+  top: 90%;
+  left: 97%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 3px white;
+}
+body #goback a {
+  text-align: center;
+  color: azure;
+  font-size: 50px;
+  font-weight: 900;
+  display: block;
+  width: 100%;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
