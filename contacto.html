@@ -17,15 +17,18 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/locale/es-mx.min.js"
         integrity="sha512-Qy4cmZ6v7vnVEc0cn/BIj9q15eB98do4hMvu8xtc/H+v+YYpdpDrB35flHS3NPLbZUpe1npSYY/u+Gi3UB61vw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+    <!-- fin moment -->
 
     <!-- Agregando jquery ui -->
     <script src="../proyecto1/js/jquery-ui-1.12.1/jquery-ui.min.css"></script>
     <script src="../proyecto1/js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
     <script src="../proyecto1/js/jquery-ui-1.12.1/jquery-ui.structure.min.css"></script>
     <script src="../proyecto1/js/jquery-ui-1.12.1/jquery-ui.theme.min.css"></script>
+    <!-- fin jqueryui -->
 
-
+    <!-- Inicio contact -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
+    <!-- fin contact -->
 
     <script src="../proyecto1/js/main.js"></script>
     <title>Caracol</title>
@@ -39,7 +42,6 @@
     </div>
     <div id="goback">
         <a href="#" title="regresar al inicio">^</a>
-
     </div>
 
     <div id="global">
@@ -70,25 +72,33 @@
             </div>
             <!-- Inicio contenido -->
             <section id="content">
-                <!-- Post/articulos -->
-                <div id="posts">
-                    <!-- <article class="post">
-                        <h2>Titulo muyyyyyyyyyy laaargo</h2>
-                        <span>Fecha de publicacion</span>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin imperdiet interdum purus sed
-                            feugiat. Aliquam consectetur accumsan iaculis. Integer bibendum urna eget nunc semper
-                            pharetra.
-                            Pellentesque malesuada luctus neque ac fermentum. In hac habitasse platea dictumst. Mauris
-                            dolor
-                            magna, tristique eget nisl non, hendrerit interdum tellus. In et nulla ac tellus placerat
-                            aliquam a sed quam. Sed semper diam ex, ac egestas leo volutpat sagittis. In hac habitasse
-                            platea dictumst. Curabitur nec erat convallis, facilisis velit ultricies, efficitur enim.
-                            Sed
-                            vel consectetur ligula.</p>
-                        <a href="#" class="leer_más">
-                            Leer más
-                        </a>
-                    </article> -->
+                <!-- Reloj -->
+                <div id="contacto">
+                    <h2>Contacto</h2>
+                    <form class="cmxform" id="commentForm" method="get" action="">
+                        <fieldset>
+                          <legend>Introduce los datos:</legend>
+                          <p>
+                            <label for="cname">Nombre (requerido)</label>
+                            <input id="cname" name="name" minlength="2" type="text" required>
+                          </p>
+                          <p>
+                            <label for="cemail">E-Mail (requerido)</label>
+                            <input id="cemail" type="email" name="email" required>
+                          </p>
+                          <p>
+                            <label for="curl">URL (opcional)</label>
+                            <input id="curl" type="url" name="url">
+                          </p>
+                          <p>
+                            <label for="ccomment">Your comment (requerido)</label>
+                            <textarea id="ccomment" name="comment" required></textarea>
+                          </p>
+                          <p>
+                            <input class="submit" type="submit" value="Submit">
+                          </p>
+                        </fieldset>
+                      </form>
                 </div>
                 <!-- Barra lateral-->
                 <aside id="sidebar">

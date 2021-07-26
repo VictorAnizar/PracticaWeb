@@ -1,9 +1,63 @@
 'use strict'
+
 $(document).ready(function () {
-
-
-
     //slider
+    slidePag();
+    
+    //acordion sobre mi 
+    acordeon();
+    
+    //posts
+    postsDinamicos();
+
+    //cambio de tema
+    cambioTema();
+
+    //boton regresar al inicio
+    botonRegresar();
+
+    //guardar en localstorage
+    guardarLocalStorage();
+
+    //reloj
+    reloj();
+
+    //formulario de contacto
+    formContact();
+});
+
+function formContact(){
+    $("#commentForm").validate();
+}
+
+function reloj(){
+
+
+    //podemos usar Date pero tambien podemos usar la libreria moment js
+    // var div_reloj=document.querySelector("#reloj");
+    // var tiempo = setInterval(function(){
+    //     var h=new Date();
+    //     var hours=h.getHours();
+    //     var minutes=h.getMinutes();
+    //     var seconds=h.getSeconds();
+    //     var la_hora=`
+    //     <h2>La hora es ${hours} con ${minutes} y ${seconds} segundos</h2>
+    //     `;
+        
+    //     div_reloj.innerHTML=(la_hora);
+
+    // }, 1000);
+    //clearInterval(tiempo);
+    setInterval(function(){
+        var hora= (moment().format('h:mm:ss a'));
+        var la_hora=`
+        <h1>La hora es ${hora}</h1>
+        `;
+        $("#reloj").html(la_hora);
+    }, 1000);
+}
+
+function slidePag(){
     $('.bxslider').bxSlider({
         mode: 'fade',
         captions: true,
@@ -15,9 +69,16 @@ $(document).ready(function () {
         auto: true,
         speed: 100
     });
+}
 
+function acordeon(){
+    $("#accordion").accordion({
+        heightStyle: "content",
+        animate: 500
+    });
+}
 
-    //posts
+function postsDinamicos(){
     var posts = [
         {
             title: 'prueba de titulo 1',
@@ -81,7 +142,9 @@ $(document).ready(function () {
         `;
         $("#posts").append(plantilla);
     }
+}
 
+function cambioTema(){
     //cambio de stilo
     //otra opcion para cambiar de temas es alternar la hoja de estilos.
     //se deberia crear una hoja de estilos para cada tema, en cada hoja
@@ -101,6 +164,8 @@ $(document).ready(function () {
         //cambio color boton login
         $("#boton_login").removeClass("verde azul")
             .addClass("rojo");
+        $("#buton_logout").removeClass("verde azul")
+            .addClass("rojo");
         //cambio de color al hacer hover en menu
         $(".lis").removeClass("li_verde li_azul");
         $(".lis").addClass("li_rojo");
@@ -117,6 +182,8 @@ $(document).ready(function () {
         $("#titulo").addClass("verde");
         //cambio color boton login
         $("#boton_login").removeClass("rojo azul")
+            .addClass("verde");
+        $("#buton_logout").removeClass("rojo azul")
             .addClass("verde");
         //cambio de color al hacer hover en menu
         $(".lis").removeClass("li_rojo li_azul");
@@ -135,17 +202,24 @@ $(document).ready(function () {
         //cambio color boton login
         $("#boton_login").removeClass("rojo verde")
             .addClass("azul");
+            $("#buton_logout").removeClass("rojo verde")
+            .addClass("azul");
         //cambio de color al hacer hover en menu
         $(".lis").removeClass("li_rojo li_verde");
         $(".lis").addClass("li_azul");
     });
-    //boton regresar al inicio
+}
+
+function botonRegresar(){
+
     $("#goback").click(function () {
         $('html, body').animate({
             scrollTop: 0
         }, 500);
     });
-    //guardar en localstorage
+}
+
+function guardarLocalStorage(){
     if (typeof Storage != 'undefined') {
         console.log("Localstorage disponible");
     } else {
@@ -194,8 +268,4 @@ $(document).ready(function () {
             $("#sesion_iniciada").addClass("oculto");//va a estar invisible el saludo al usuario
         });
     }
-
-
-
-});
-
+}

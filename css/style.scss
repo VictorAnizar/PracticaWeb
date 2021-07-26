@@ -121,6 +121,70 @@ body{
                 flex-wrap: wrap;
                 //justify-content: space-between;
                 font-family: Helvetica,Verdana, Geneva, Tahoma, sans-serif;
+                #reloj{
+                    margin-right: 1%;
+                    flex-basis: 66%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    h1{
+                        font-size: 50px;
+                        border: 1px solid red;
+                        padding: 20px;
+                    }
+                }
+                #contacto{
+                    
+                    flex-basis: 66%;
+                    
+                    h2, form{
+                        width: 100%;
+                        margin: 10px;
+                    }
+                    h2{
+                        text-align: center;
+                        font-size: 50px;
+                    }
+                    form{
+                        fieldset{
+                            border: none;
+                            *{
+                                margin: 5px auto;
+                                width: 95%;
+                                
+                            }
+                        }
+                    }
+                    
+                   
+                }
+                #acerca_de_mi{
+                    margin-right: 1%;
+                    flex-basis: 66% !important;
+                    display: flex;
+                    justify-content: center;
+                    //align-items: center;
+                    #accordion{
+
+                        h3{
+                            background-image: url("../img/lines.png");
+                            border: 1px solid black;
+                            border-radius: 5px;
+                            cursor: pointer;
+                            margin-top: 10px;
+                        }
+                        div{
+                            background-color: whitesmoke;
+                            border-radius: 5px;
+                            p{
+                                margin: 0px 3px 0px 3px;
+                            }
+                            ul{
+                                list-style: none;
+                            }
+                        }
+                    }
+                }
                 #posts{
                     margin-right: 1%;
                     flex-basis: 66%;
