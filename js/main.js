@@ -154,7 +154,7 @@ function cambioTema(){
     //cambiar de tema
     $("#color_rojo").click(function () {
         //cambio el fondo
-        $("body").css("background-image", "url('img/rojo.jpg')");
+        $("body").css("background-image", "url('./img/rojo.jpg')");
         //cambia botones de leer mas de articulos
         $(".leer_más").removeClass("verde azul");
         $(".leer_más").addClass("rojo");
@@ -173,7 +173,7 @@ function cambioTema(){
     });
     $("#color_verde").click(function () {
         //cambio el fondo
-        $("body").css("background-image", "url('img/hojas.jpg')");
+        $("body").css("background-image", "url('./img/hojas.jpg')");
         //cambia botones de leer mas de articulos
         $(".leer_más").removeClass("rojo azul");
         $(".leer_más").addClass("verde");
@@ -192,7 +192,7 @@ function cambioTema(){
     });
     $("#color_azul").click(function () {
         //cambio el fondo
-        $("body").css("background-image", "url('img/cielo.jpg')");
+        $("body").css("background-image", "url('./img/cielo.jpg')");
         //cambia botones de leer mas de articulos.
         $(".leer_más").removeClass("rojo verde");
         $(".leer_más").addClass("azul");
