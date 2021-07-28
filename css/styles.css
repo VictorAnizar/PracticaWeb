@@ -367,6 +367,7 @@ body #cambio_tema {
   top: 50%;
   align-items: center;
   justify-content: center;
+  z-index: 2;
 }
 body #cambio_tema .seleccion_color {
   width: 70%;
