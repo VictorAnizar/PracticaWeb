@@ -199,17 +199,17 @@ body{
                 }
                 #acerca_de_mi{
                     margin-right: 1%;
-                    flex-basis: 66% !important;
+                    flex-basis: 66% ;
                     display: flex;
                     justify-content: center;
                     //align-items: center;
                     #accordion{
-
+                        
                         h3{
                             background-image: url("../img/lines.png");
                             border: 1px solid black;
                             border-radius: 5px;
-                            cursor: pointer;
+                            cursor: pointer !important;
                             margin-top: 10px;
                         }
                         div{
@@ -276,6 +276,7 @@ body{
                     flex-basis: 27%;
                     h3{
                         background-image: url("../img/lines.png");
+                        cursor: pointer !important;
                         text-align: center;
                         margin-top: 10px;
                         margin-bottom: 10px;
@@ -429,3 +430,30 @@ body{
     }
 }
 
+// @media (max-width:700px) {
+//     #global {
+//         width: 86% !important;
+//     }
+// }
+
+// @media (max-width:600px) {
+//     #global {
+//         width: 86% !important;
+//     }
+//     #contenido_principal {
+//         #content {
+//             #acerca_de_mi {
+//                 margin-right: 0 !important; 
+//                 flex-basis: 100% !important;
+//             }
+//             #posts {
+//                 margin-right: 0 !important; 
+//                 flex-basis: 100% !important;
+//             }
+//             #sidebar{
+//                 margin-left: 0 !important;
+//                 flex-basis: 100% !important;
+//             }
+//         }
+//     }
+// }

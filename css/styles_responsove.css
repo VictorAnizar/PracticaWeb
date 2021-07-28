@@ -410,4 +410,41 @@ body #goback a {
   text-decoration: none;
 }
 
-/*# sourceMappingURL=styles.css.map */
+@media (max-width: 700px) {
+  #global {
+    width: 86% !important;
+  }
+}
+@media (max-width: 600px) {
+  #global {
+    width: 86% !important;
+  }
+
+  #contenido_principal #content #contacto {
+    margin-right: 0 !important;
+    flex-basis: 100% !important;
+  }
+  #contenido_principal #content #contacto h2 {
+    margin: 0 !important;
+    text-align: center;
+    font-size: 30px !important;
+  }
+  #contenido_principal #content #reloj {
+    margin-right: 0 !important;
+    flex-basis: 100% !important;
+  }
+  #contenido_principal #content #acerca_de_mi {
+    margin-right: 0 !important;
+    flex-basis: 100% !important;
+  }
+  #contenido_principal #content #posts {
+    margin-right: 0 !important;
+    flex-basis: 100% !important;
+  }
+  #contenido_principal #content #sidebar {
+    margin-left: 0 !important;
+    flex-basis: 100% !important;
+  }
+}
+
+/*# sourceMappingURL=styles_responsove.css.map */
