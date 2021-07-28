@@ -193,7 +193,7 @@ function cambioTema(){
     $("#color_azul").click(function () {
         //cambio el fondo
         $("body").css("background-image", "url('img/cielo.jpg')");
-        //cambia botones de leer mas de articulos
+        //cambia botones de leer mas de articulos.
         $(".leer_más").removeClass("rojo verde");
         $(".leer_más").addClass("azul");
         //cambia color texto
