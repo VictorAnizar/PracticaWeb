@@ -2,6 +2,12 @@
 
 
 //todos los tamaños de pantallas
+@media (max-width:1600px) {
+    #goback{
+        left: 1% !important;
+    }
+}
+
 @media (max-width:700px) {
     #global {
         width: 86% !important;
@@ -39,6 +45,24 @@
             #sidebar{
                 margin-left: 0 !important;
                 flex-basis: 100% !important;
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    #global {
+        #contenido_principal {
+            #header {
+                #navbar {
+                    #menu {
+                        li {
+                            flex-basis: 100%;
+                            text-align: center;
+                            border-top: 1px solid white;
+                        }
+                    }
+                }
             }
         }
     }
