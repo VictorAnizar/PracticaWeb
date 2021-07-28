@@ -75,29 +75,22 @@
                 <!-- Reloj -->
                 <div id="contacto">
                     <h2>Contacto</h2>
-                    <form class="cmxform" id="commentForm" method="get" action="">
-                        <fieldset>
-                          <legend>Introduce los datos:</legend>
-                          <p>
-                            <label for="cname">Nombre (requerido)</label>
-                            <input id="cname" name="name" minlength="2" type="text" required>
-                          </p>
-                          <p>
-                            <label for="cemail">E-Mail (requerido)</label>
-                            <input id="cemail" type="email" name="email" required>
-                          </p>
-                          <p>
-                            <label for="curl">URL (opcional)</label>
-                            <input id="curl" type="url" name="url">
-                          </p>
-                          <p>
-                            <label for="ccomment">Mensaje (requerido)</label>
-                            <textarea id="ccomment" name="comment" required></textarea>
-                          </p>
-                          <p>
-                            <input class="submit" type="submit" value="Enviar">
-                          </p>
-                        </fieldset>
+                    <form class="cmxform" id="commentForm" method="GET" action="">
+                    <div id="campo_nombre">
+                        <label for="input_nombre_contacto" >Nombre:</label>
+                        <input type="text" name="input_nombre_contacto" id="input_nombre_contacto">
+                    </div>
+                    <div id="campo_email">
+                        <label for="input_email_contacto" >Email</label>
+                        <input type="email" name="input_email_contacto" id="input_email_contacto">
+                    </div>
+                    <div id="campo_mensaje">
+                        <label for="input_mensaje_contacto" >Mensaje</label>
+                        <textarea type="text" name="input_mensaje_contacto" id="input_mensaje_contacto"></textarea>
+                    </div>
+                    <div id="boton_enviar">
+                        <button type="submit" id="button_enviar">Enviar</button>
+                    </div>
                       </form>
                 </div>
                 <!-- Barra lateral-->

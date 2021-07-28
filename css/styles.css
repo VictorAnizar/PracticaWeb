@@ -142,12 +142,54 @@ body #global #contenido_principal #content #contacto h2 {
   text-align: center;
   font-size: 50px;
 }
-body #global #contenido_principal #content #contacto form fieldset {
-  border: none;
+body #global #contenido_principal #content #contacto form {
+  display: flex;
+  flex-wrap: wrap;
+  height: 35%;
+  justify-content: space-between;
+  margin: 0;
 }
-body #global #contenido_principal #content #contacto form fieldset * {
-  margin: 5px auto;
-  width: 95%;
+body #global #contenido_principal #content #contacto form #campo_nombre {
+  flex-basis: 49%;
+}
+body #global #contenido_principal #content #contacto form #campo_nombre * {
+  width: 98.5%;
+  height: 40px;
+}
+body #global #contenido_principal #content #contacto form #campo_email {
+  flex-basis: 49%;
+}
+body #global #contenido_principal #content #contacto form #campo_email * {
+  width: 98.5%;
+  height: 40px;
+}
+body #global #contenido_principal #content #contacto form #campo_mensaje {
+  flex-basis: 100%;
+  flex-grow: 1;
+  margin-top: 5px;
+}
+body #global #contenido_principal #content #contacto form #campo_mensaje * {
+  width: 99%;
+  height: 200px;
+}
+body #global #contenido_principal #content #contacto form #boton_enviar {
+  flex-basis: 100%;
+  flex-grow: 1;
+  margin-top: 5px;
+}
+body #global #contenido_principal #content #contacto form #boton_enviar #button_enviar {
+  width: 100%;
+  height: 50px;
+  color: white;
+  background-color: black;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: all 300ms;
+}
+body #global #contenido_principal #content #contacto form #boton_enviar #button_enviar:hover {
+  transform: scale(1.05);
+  color: black;
+  background-color: whitesmoke;
 }
 body #global #contenido_principal #content #acerca_de_mi {
   margin-right: 1%;
