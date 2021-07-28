@@ -426,6 +426,11 @@ body #goback a {
     width: 86% !important;
   }
 
+  #contenido_principal #header #navbar #menu li {
+    flex-basis: 100%;
+    text-align: center;
+    border-top: 1px solid white;
+  }
   #contenido_principal #content #contacto {
     margin-right: 0 !important;
     flex-basis: 100% !important;
@@ -450,13 +455,6 @@ body #goback a {
   #contenido_principal #content #sidebar {
     margin-left: 0 !important;
     flex-basis: 100% !important;
-  }
-}
-@media (max-width: 425px) {
-  #global #contenido_principal #header #navbar #menu li {
-    flex-basis: 100%;
-    text-align: center;
-    border-top: 1px solid white;
   }
 }
 
