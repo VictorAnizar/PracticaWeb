@@ -1,4 +1,4 @@
-# Proyecto de una página web con HTML, CSS (SASS), Javascript (JQuery).
+# Proyecto de una página web con HTML, CSS (SASS) y Javascript (JQuery y JQuery UI).
 ## El proyecto es responsive, por lo cual, se puede ver en cualquier dispositivo.
 
 # Página de Inicio
