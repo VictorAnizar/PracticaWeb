@@ -1,3 +1,6 @@
+# Proyecto de una página web con HTML, CSS (SASS), Javascript (JQuery).
+## El proyecto es responsive, por lo cual, se puede ver en cualquier dispositivo.
+
 # Página de Inicio
 
 ![alt text](img/pagina_inicio.png)
