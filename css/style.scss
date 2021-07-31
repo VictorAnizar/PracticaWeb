@@ -53,6 +53,7 @@ body{
                 justify-content: right;
                 flex-wrap: wrap;
                 align-items: center;
+                font-family:Verdana, Arial, Helvetica, sans-serif;
                 #titulo_header{
                     margin-top: 0.5%;
                     margin-bottom: 0.5%;
@@ -62,7 +63,6 @@ body{
                         letter-spacing: 4px;
                         font-weight: 600;
                         color: white;
-                        font-family:Verdana, Arial, Helvetica, sans-serif;
                         text-transform: uppercase;
                         padding: 9px 5px;
                     }

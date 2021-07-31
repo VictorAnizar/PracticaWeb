@@ -61,6 +61,7 @@ body #global #contenido_principal #header {
   justify-content: right;
   flex-wrap: wrap;
   align-items: center;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 body #global #contenido_principal #header #titulo_header {
   margin-top: 0.5%;
@@ -72,7 +73,6 @@ body #global #contenido_principal #header #titulo_header h1 {
   letter-spacing: 4px;
   font-weight: 600;
   color: white;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   padding: 9px 5px;
 }
@@ -426,10 +426,28 @@ body #goback a {
     width: 86% !important;
   }
 
+  #contenido_principal #header {
+    justify-content: space-between !important;
+  }
+  #contenido_principal #header #navbar {
+    display: none;
+  }
   #contenido_principal #header #navbar #menu li {
     flex-basis: 100%;
     text-align: center;
     border-top: 1px solid white;
+  }
+  #contenido_principal #header #navbar_drop {
+    display: flex;
+    flex-basis: 20%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  #contenido_principal #header #navbar_drop img {
+    width: 37%;
+    display: block;
+    cursor: pointer;
   }
   #contenido_principal #content #contacto {
     margin-right: 0 !important;
@@ -455,6 +473,20 @@ body #goback a {
   #contenido_principal #content #sidebar {
     margin-left: 0 !important;
     flex-basis: 100% !important;
+  }
+}
+@media (min-width: 600px) {
+  #contenido_principal #header #navbar_drop {
+    display: none;
+  }
+}
+@media (max-width: 420px) {
+  #global {
+    width: 86% !important;
+  }
+
+  #contenido_principal #header #navbar_drop img {
+    width: 60%;
   }
 }
 

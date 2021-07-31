@@ -1,12 +1,18 @@
 'use strict'
 
 $(document).ready(function () {
+    
+    //aparicion de boton de hamburguesa
+    $("#navbar_drop").click(function(){
+        $( "#navbar" ).toggle( "down" );
+    });
+    
     //slider
     slidePag();
-    
+
     //acordion sobre mi 
     acordeon();
-    
+
     //posts
     postsDinamicos();
 
@@ -24,13 +30,14 @@ $(document).ready(function () {
 
     //formulario de contacto
     formContact();
+
 });
 
-function formContact(){
+function formContact() {
     $("#commentForm").validate();
 }
 
-function reloj(){
+function reloj() {
 
 
     //podemos usar Date pero tambien podemos usar la libreria moment js
@@ -43,21 +50,21 @@ function reloj(){
     //     var la_hora=`
     //     <h2>La hora es ${hours} con ${minutes} y ${seconds} segundos</h2>
     //     `;
-        
+
     //     div_reloj.innerHTML=(la_hora);
 
     // }, 1000);
     //clearInterval(tiempo);
-    setInterval(function(){
-        var hora= (moment().format('h:mm:ss a'));
-        var la_hora=`
+    setInterval(function () {
+        var hora = (moment().format('h:mm:ss a'));
+        var la_hora = `
         <h1>La hora es ${hora}</h1>
         `;
         $("#reloj").html(la_hora);
     }, 1000);
 }
 
-function slidePag(){
+function slidePag() {
     $('.bxslider').bxSlider({
         mode: 'fade',
         captions: true,
@@ -71,14 +78,14 @@ function slidePag(){
     });
 }
 
-function acordeon(){
+function acordeon() {
     $("#accordion").accordion({
         heightStyle: "content",
         animate: 500
     });
 }
 
-function postsDinamicos(){
+function postsDinamicos() {
     var posts = [
         {
             title: 'prueba de titulo 1',
@@ -144,7 +151,7 @@ function postsDinamicos(){
     }
 }
 
-function cambioTema(){
+function cambioTema() {
     //cambio de stilo
     //otra opcion para cambiar de temas es alternar la hoja de estilos.
     //se deberia crear una hoja de estilos para cada tema, en cada hoja
@@ -202,7 +209,7 @@ function cambioTema(){
         //cambio color boton login
         $("#boton_login").removeClass("rojo verde")
             .addClass("azul");
-            $("#buton_logout").removeClass("rojo verde")
+        $("#buton_logout").removeClass("rojo verde")
             .addClass("azul");
         //cambio de color al hacer hover en menu
         $(".lis").removeClass("li_rojo li_verde");
@@ -210,7 +217,7 @@ function cambioTema(){
     });
 }
 
-function botonRegresar(){
+function botonRegresar() {
 
     $("#goback").click(function () {
         $('html, body').animate({
@@ -219,7 +226,7 @@ function botonRegresar(){
     });
 }
 
-function guardarLocalStorage(){
+function guardarLocalStorage() {
     if (typeof Storage != 'undefined') {
         console.log("Localstorage disponible");
     } else {
@@ -228,14 +235,14 @@ function guardarLocalStorage(){
 
     $("#boton_login").click(function () {
         //si los campos son llenados
-        if(($("#name").val()!='')&&($("#email").val()!='')&&($("#password").val()!='')){
+        if (($("#name").val() != '') && ($("#email").val() != '') && ($("#password").val() != '')) {
             var usuario = {
                 name: $("#name").val(),
                 email: $("#email").val(),
                 password: $("#password").val()
             };
             localStorage.setItem("usuario", JSON.stringify(usuario));
-        }else{
+        } else {
             alert("Llena los datos correctamente");
         }
     });
@@ -255,9 +262,9 @@ function guardarLocalStorage(){
         // var plantilla_saludo=`
         // <h3>Hola ${JSON.parse(localStorage.getItem("usuario")).name}</h3>
         // `;
-        var plantilla_saludo=JSON.parse(localStorage.getItem("usuario")).name;
-        var h3=document.createElement("h3");
-        h3.append("Hola "+plantilla_saludo)
+        var plantilla_saludo = JSON.parse(localStorage.getItem("usuario")).name;
+        var h3 = document.createElement("h3");
+        h3.append("Hola " + plantilla_saludo)
         document.querySelector("#sesion_iniciada").prepend(h3);
 
 

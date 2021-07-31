@@ -61,6 +61,7 @@ body #global #contenido_principal #header {
   justify-content: right;
   flex-wrap: wrap;
   align-items: center;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
 }
 body #global #contenido_principal #header #titulo_header {
   margin-top: 0.5%;
@@ -72,7 +73,6 @@ body #global #contenido_principal #header #titulo_header h1 {
   letter-spacing: 4px;
   font-weight: 600;
   color: white;
-  font-family: Verdana, Arial, Helvetica, sans-serif;
   text-transform: uppercase;
   padding: 9px 5px;
 }
